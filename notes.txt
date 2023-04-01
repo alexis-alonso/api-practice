@@ -1,0 +1,18 @@
+For this project, you simply need to make a small JavaScript project that makes an HTTP request to one of these APIs and shows the data in some way, whether it is text or images, or anything else. 
+
+
+How to get started:
+
+2. Find the base URL and endpoint(s) that you want to use to get your data
+3. Create your `fetch` request using the URL and the API token as the documentation tells you
+4. Use document DOM methods like `appendChild` and/or `createElement` to display your data on the page. You can do this either on page load or a button click, or any other trigger you want to use
+5. Add a little styling to make it easy to look at if it needs it
+
+
+
+
+https://opentdb.com/api_config.php
+Use of this API does not require a API Key, just generate the URL below use it in your own application to retrieve trivia questions.
+
+
+had to use https://www.youtube.com/watch?v=SgJ_femmsfg for some code to understand how to use API
