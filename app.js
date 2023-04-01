@@ -4,7 +4,6 @@ const question = document.getElementById('question');
 const correct = document.getElementById('answer1');
 const incorrect1 = document.getElementById('answer2');
 const incorrect2 = document.getElementById('answer3');
-const incorrect3 = document.getElementById('answer4');
 const done = document.getElementsByClassName('done');
 
 // had to use https://www.youtube.com/watch?v=SgJ_femmsfg for some code to understand how to use API
@@ -30,12 +29,12 @@ function getQuestion() {
         question.innerHTML = ask;
         
         correct.innerHTML = Questions[0].correct_answer[0];
+        correct.classList.remove('correct');
 
         incorrect1.innerHTML = Questions[0].incorrect_answers[0];
         incorrect2.innerHTML = Questions[0].incorrect_answers[1];
-        incorrect3.innerHTML = Questions[0].incorrect_answers[2];
 
-
+        
 
     })
     .catch(error => console.log('data could not be retrieved'));
